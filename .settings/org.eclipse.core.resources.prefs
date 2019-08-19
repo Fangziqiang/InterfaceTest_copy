@@ -1,3 +1,6 @@
 eclipse.preferences.version=1
+encoding//common/configHttp.py=utf-8
 encoding/getpathInfo.py=utf-8
+encoding/readConfig.py=utf-8
+encoding/readExcel.py=utf-8
 encoding/test_api.py=utf-8
