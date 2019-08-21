@@ -6,4 +6,6 @@ encoding/getpathInfo.py=utf-8
 encoding/geturlParams.py=utf-8
 encoding/readConfig.py=utf-8
 encoding/readExcel.py=utf-8
+encoding/runAll.py=utf-8
+encoding/test.py=utf-8
 encoding/test_api.py=utf-8

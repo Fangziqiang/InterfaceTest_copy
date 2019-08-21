@@ -6,8 +6,3 @@ user/test01case
 #shop/test_shop_list
 #shop/test_my_shop
 #shop/test_new_shop
-
-
-
-# 这个文件的作用是，我们通过这个文件来控制，执行哪些模块下的哪些unittest用例文件。如在实际的项目中：user模块下的test01case.py，店铺shop模块下的我的店铺
-# my_shop，如果本轮无需执行哪些模块的用例的话，就在前面添加#。我们继续往下走，还缺少一个发送邮件的文件

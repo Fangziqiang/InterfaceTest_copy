@@ -1,5 +1,7 @@
 #coding=utf-8
 import os
+
+# pip2 install pywin32com
 import win32com.client as win32
 import datetime
 import readConfig
@@ -14,7 +16,8 @@ mail_path = os.path.join(getpathInfo.get_Path(),'result','report.html')     # èŽ
 
 class send_email():
     def outlook(self):
-        olook = win32.Dispatch("%s.Application"%app)
+#         olook = win32.Dispatch("%s.Application"%app)
+        olook=win32.gencache.EnsureDispatch('%s.Application'% app)
         mail = olook.CreateItem(win32.constants.olMailItem)
         
         mail.To = address
