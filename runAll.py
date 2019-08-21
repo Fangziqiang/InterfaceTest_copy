@@ -22,6 +22,7 @@ class AllTest:
         #配置执行哪些测试文件的配置文件路径
         self.caseListFile = os.path.join(path,"caselist.txt")
         self.caseFile = os.path.join(path,"testCase")   #真正的断言文件路径
+        print("self.caseFile:%s"%self.caseFile)
         self.caseList = []
         
     def set_case_list(self):
@@ -46,7 +47,8 @@ class AllTest:
         for case in self.caseList: #从caselist元素组中循环取出case
             case_name = case.split("/")[-1] #通过split函数来将aaa/bbb分割字符串，-1取后面，0取前面
             print(case_name+".py")
-            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=(case_name+'.py'), top_level_dir=None)
+            print (case_name)
+            discover = unittest.defaultTestLoader.discover(self.caseFile, pattern=(case_name+'.py'),top_level_dir=None)
 #             discover = unittest.defaultTestLoader.discover(self.caseFile, pattern='*.py', top_level_dir=None)
             suite_module.append(discover)   #将discover中取出test_name，使用addTest添加到测试集
             print('suite_module:'+str(suite_module))
