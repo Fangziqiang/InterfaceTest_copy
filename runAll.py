@@ -78,7 +78,7 @@ class AllTest:
         
         finally:
             print("***********Test END***************")
-#             fp1.close()
+            fp1.close()
             
         if on_off == 'on':
             send_email.outlook()
